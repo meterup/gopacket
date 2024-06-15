@@ -893,6 +893,53 @@ func (m *Dot11) NextLayerType() gopacket.LayerType {
 	return m.Type.LayerType()
 }
 
+// transmitter address (STA or AP)
+func (m *Dot11) TxAddr() net.HardwareAddr {
+	return m.Address2
+}
+
+// receiver address (STA or AP)
+func (m *Dot11) RxAddr() net.HardwareAddr {
+	return m.Address1
+}
+
+// source address (possibly on the wired network)
+func (m *Dot11) SrcAddr() net.HardwareAddr {
+	if m.Flags.ToDS() && m.Flags.FromDS() {
+		return m.Address4
+	}
+	if m.Flags.FromDS() {
+		return m.Address3
+	}
+	// NoDS or ToDS: the source is the transmitter
+	return m.Address2
+}
+
+// destination address (possibly on the wired network)
+func (m *Dot11) DstAddr() net.HardwareAddr {
+	if m.Flags.ToDS() {
+		return m.Address3
+	}
+	// NoDS or FromDS: the destination is the receiver
+	return m.Address1
+}
+
+// BSSID
+func (m *Dot11) BSSID() net.HardwareAddr {
+	if m.Flags.ToDS() && m.Flags.FromDS() {
+		// no BSSID for ToFromDS
+		return net.HardwareAddr{}
+	}
+	if m.Flags.ToDS() {
+		return m.Address1
+	}
+	if m.Flags.FromDS() {
+		return m.Address2
+	}
+	// NoDS
+	return m.Address3
+}
+
 func createU8(x uint8) *uint8 {
 	return &x
 }
