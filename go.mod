@@ -1,4 +1,4 @@
-module github.com/google/gopacket
+module github.com/meterup/gopacket
 
 go 1.12
 
