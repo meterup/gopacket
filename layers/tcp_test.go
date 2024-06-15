@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/google/gopacket"
+	"github.com/meterup/gopacket"
 )
 
 func TestTCPOptionKindString(t *testing.T) {
