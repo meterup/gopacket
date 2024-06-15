@@ -10,7 +10,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/google/gopacket"
+	"github.com/meterup/gopacket"
 )
 
 func TestASFDecodeFromBytes(t *testing.T) {
