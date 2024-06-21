@@ -9,7 +9,7 @@ package layers
 import (
 	"encoding/binary"
 	"errors"
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // MPLS is the MPLS packet header.

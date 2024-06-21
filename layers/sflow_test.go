@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // Test packet collected from live network. See the test below for contents

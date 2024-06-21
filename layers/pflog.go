@@ -11,7 +11,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 type PFDirection uint8

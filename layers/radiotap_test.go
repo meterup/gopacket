@@ -6,7 +6,7 @@
 package layers
 
 import (
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 	"testing"
 )
 

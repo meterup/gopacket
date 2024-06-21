@@ -10,7 +10,7 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // LLC is the layer used for 802.2 Logical Link Control headers.

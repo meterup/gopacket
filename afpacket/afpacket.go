@@ -28,7 +28,7 @@ import (
 	"golang.org/x/net/bpf"
 	"golang.org/x/sys/unix"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 /*

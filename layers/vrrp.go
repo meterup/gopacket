@@ -11,7 +11,7 @@ import (
 	"errors"
 	"net"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 /*

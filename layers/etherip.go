@@ -8,7 +8,7 @@ package layers
 
 import (
 	"encoding/binary"
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // EtherIP is the struct for storing RFC 3378 EtherIP packet headers.

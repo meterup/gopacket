@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 const (

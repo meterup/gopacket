@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // testPacketOSPF2Hello is the packet:

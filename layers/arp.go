@@ -12,7 +12,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // Potential values for ARP.Operation.

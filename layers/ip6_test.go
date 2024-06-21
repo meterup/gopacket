@@ -8,7 +8,7 @@ package layers
 
 import (
 	"bytes"
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 	"net"
 	"reflect"
 	"testing"
