@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 func checkRADIUS(desc string, t *testing.T, packetBytes []byte, pExpectedRADIUS *RADIUS) {

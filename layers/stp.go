@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 type STPSwitchID struct {

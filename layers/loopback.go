@@ -11,7 +11,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // Loopback contains the header for loopback encapsulation.  This header is

@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // testPacketGRE is the packet:

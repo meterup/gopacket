@@ -7,7 +7,7 @@
 package layers
 
 import (
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 // TLSHandshakeRecord defines the structure of a Handshare Record

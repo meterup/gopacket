@@ -9,7 +9,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/meterup/gopacket"
+	"github.com/google/gopacket"
 )
 
 const (
